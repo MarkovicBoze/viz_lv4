@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+	</head>
+	<body>
+		<script>
+		
+		var data = [{name: 'jabuka', value: 17},
+					{name: 'kruska', value: 4},
+					{name: 'banana', value: 83},  
+					{name: 'jagoda', value: 47},
+					{name:'ribizla', value: 1}];
+		
+		var pie = d3.layout.pie()
+		.value(function(d) { return d.value; });
+		
+		pie(data); 
+		 
+		</script>
+	</body>
+</html>
