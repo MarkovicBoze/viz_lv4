@@ -48,7 +48,7 @@
 			.attr("transform", function(d) 
 					{ return "translate(" + arc.centroid(d) + ")"; }) 
 			.attr("text-anchor", "middle")
-			.text(function(d) { return d.value; });
+			.text(function(d,i) { return data[i].name + " " + data[i].value; });
 			
 		
 			
